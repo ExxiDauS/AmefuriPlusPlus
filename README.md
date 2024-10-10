@@ -9,3 +9,5 @@
 ---
 ### Daily Recommend 🍓
 [![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=qgiw2ogctywitpjgfj8fu1nq5&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false)](https://github.com/kittinan/spotify-github-profile)
+
+---
