@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+}
+
+body, html{
+    height: 100%;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.home {
+    background: rgb(140, 150, 190);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.japanese-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.kanji-hiragana {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.kanji {
+    font-size: 4vw;
+    margin-right: 10px;
+}
+
+.hiragana {
+    padding-top: 10%;
+    font-size: 2vw;
+
+}
+
+
+.center {
+    text-align: center;
+
+}
+
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* background-color: aliceblue; */
+}
+
+.parallax {
+    background-image: url("./image/Arduino_Uno-R4.png");
+    height: 50%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.abstract {
+    /* background-color: green; */
+}
+
+.details {
+
+}
+
+.oopakorn-img {
+    
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 4px;
+    justify-content: space-around;
+    
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    padding: 0 4px;
+    
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    height: 10vw;
+    width: 10vw;
+
+  }
+
+.image-description {
+    text-align: center; /* Center the text and image */
+    margin-top: 10px;
+}
+
+.image-description img {
+    height: 10vw;
+    width: 10vw;
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.description {
+    font-size: 1vw; /* Adjust this based on your preference */
+    color: #333; /* Adjust text color if needed */
+    margin-top: 5px; /* Add some spacing between the image and description */
+}
+
+.log-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.log-container textarea{
+    overflow-y: scroll;
+    color: rgb(102, 255, 102);
+    width: 30vw;
+    height: 15vw;
+    background: black;
+    resize: none;
+}
+
+textarea::-webkit-scrollbar {
+    /* width: 0em; */
+    display: none;
+}
+/*
+textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+    display: none;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+} */
