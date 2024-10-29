@@ -4,7 +4,7 @@
 #include <MQTTClient.h>
 
 const char WIFI_SSID[] = "Samsung Galaxy S24 Ultra";          // CHANGE TO YOUR WIFI SSID
-const char WIFI_PASSWORD[] = "090123tn";  // CHANGE TO YOUR WIFI PASSWORD
+const char WIFI_PASSWORD[] = "090123tn";                      // CHANGE TO YOUR WIFI PASSWORD
 
 const char MQTT_BROKER_ADRRESS[] = "mqtt-dashboard.com";  // CHANGE TO MQTT BROKER'S ADDRESS
 const int MQTT_PORT = 1883;
@@ -16,7 +16,7 @@ const char MQTT_PASSWORD[] = "";                                            // C
 const char PUBLISH_TOPIC[] = "Amefuri/plus";    // CHANGE IT AS YOU DESIRE
 const char SUBSCRIBE_TOPIC[] = "Amefuri/plus";  // CHANGE IT AS YOU DESIRE
 
-const int PUBLISH_INTERVAL = 30000;  // 60 seconds
+const int PUBLISH_INTERVAL = 30000;  // 30 seconds
 
 WiFiClient network;
 MQTTClient mqtt = MQTTClient(256);
@@ -77,9 +77,9 @@ void loop() {
 
   // Start counting wind events
   if (!counting) {
-    startTime = millis(); // Record the start time
-    counting = true;      // Set counting flag
-    windCount = 0;        // Reset wind count
+    startTime = millis();
+    counting = true;
+    windCount = 0;
   }
 
   // Count wind events for one minute
@@ -226,8 +226,8 @@ void windCounter() {
 // Check if rain or not
 String checkStatus(int windFullRound, float humid) {
   if (windFullRound >= 3 && humid >= 80.00) {
-    return "It's Raining, GO GET YOUR CLOTHS!!";
+    return "It's Raining, You should not dry your cloths now D:";
   } else {
-    return "It's not Raining, Your cloths are safe";
+    return "It's not Raining, Your cloths are safe to dry :D";
   }
 }
