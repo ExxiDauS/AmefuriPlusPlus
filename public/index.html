@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Physical Computing Web</title>
+    <title>Amefuri++ 雨降り</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
+    <link rel="icon" type="image/x-icon" href="image/strawberry.ico">
 </head>
 <body>
     <div class="nav"></div>
     <div class="home">
-        <img src="./image/raw.png" style="height: 80%; " alt="">
+        <img src="./image/raw.png" style="height: 40vw; " alt="">
         <h1 class="japanese-container">
             <div class="kanji-hiragana">
                 <div class="kanji">雨</div>
@@ -31,106 +32,209 @@
             </div>
         </h1>
     </div>
+    <br><br><br>
+    <div class="cool-image">
+            <div class="cool-image-container">
+                <img src="image/hardware/IMG_7414.jpg" height="300px" alt="">
+                <img src="image/hardware/IMG_7412.jpg" height="300px" alt="">
+            </div>
+    </div>
+    <br><br>
+    <hr style="width:50%;">
 
     <div class="abstract">
         <div class="container">
-            <br><br><br>
+            <br>
             <h1>บทคัดย่อ</h1><br>
-            <p>โปรเจค Amefuri++ เป็นโปรเจคที่พัฒนาต่อยอดมากจากโปรเจค Amefuri ในรายวิชา PSCP เมื่อปีที่แล้ว โดยในโปรเจคนี้จะเป็นการนำเอา Microcontroller มาช่วยในการแนะนำว่าควรตากผ้าในเวลานี้หรือไม่ โดยอาศัยข้อมูลที่เป็นปัจจัยที่ทำให้เกิดฝนตก ซึ่งในโปรเจคนี้จะพิจารณาจากอุณหภูมิ ความชื้น และความเร็วลม โดยการใช้เซนเซอร์วัดอุณหภูมิและความชื้น (DHT22) และ เซนเซอร์นับจำนวนรอบ (FC-33) ที่นำมาประยุกต์ใช้เพื่อนับรอบใบพัด สำหรับการตรวจสอบความเร็วลม โดยจะมีเว็บไซต์สำหรับเชื่อมต่อกับตัวบอร์ด เพื่อช่วยในการพิจารณาว่าตอนนี้ควรตากผ้าหรือไม่โดยอาศัยข้อมูลที่ได้จากเซนเซอร์ ณ ช่วงเวลานั้น ๆ
+            <p>&emsp;โปรเจค Amefuri++ เป็นโปรเจคที่
+                พัฒนาต่อยอดมาจากโปรเจค Amefuri ในรายวิชา PSCP เมื่อปีที่แล้ว 
+                โดยในโปรเจคนี้จะเป็นการนำเอา Microcontroller มาช่วยในการแนะนำว่าควรตากผ้าในเวลานี้หรือไม่ 
+                โดยอาศัยข้อมูลที่เป็นปัจจัยที่ทำให้เกิดฝนตก
+            
             </p>
-            <br><br><br>
+            <!-- <img src="image/Arduino_Uno-R4.png" width="950wv"> -->
         </div>
     </div>
-    
-    <div class="parallax"></div>
 
     <div class="details">
         <div class="container">
             <br><br><br>
             <h1>รายละเอียด</h1><br>
+            <p>&emsp;ซึ่งในโปรเจคนี้จะพิจารณาจากอุณหภูมิ ความชื้น และความเร็วลม 
+                โดยการใช้เซนเซอร์วัดอุณหภูมิและความชื้น (DHT22) และ เซนเซอร์นับจำนวนรอบ (FC-33) 
+                ที่นำมาประยุกต์ใช้เพื่อนับรอบใบพัด สำหรับการตรวจสอบความเร็วลม โดยจะมีเว็บไซต์สำหรับเชื่อมต่อกับตัวบอร์ด 
+                เพื่อช่วยในการพิจารณาว่าตอนนี้ควรตากผ้าหรือไม่โดยอาศัยข้อมูลที่ได้จากเซนเซอร์ ณ ช่วงเวลานั้น ๆ
+            </p>
+            <br><br><br>
             <div class="oopakorn">
-                <h2>อุปกรณ์</h2>
-                <center>
+                <h1>อุปกรณ์</h1>
+                <br>
                 <div class="oopakorn-img">
-                    <div class="row">
-                        <div class="column">
-                            <div class="image-description">
-                                <img src="./image/ooppakorn/4208544-40.jpg">
-                                <p class="description">Arduino Uno R4 Wifi</p>
-                            </div>
-                            <div class="image-description">
-                                <img src="./image/ooppakorn/dht22-digital-temperature-humidity-sensor-module56055530906.webp">
-                                <p class="description">DHT22</p>
-                            </div>
+                    <div class="image-description">
+                        <img src="./image/ooppakorn/4208544-40.jpg">
+                        <p class="description">Arduino Uno R4 Wifi</p>
+                    </div>
+                    <div class="image-description">
+                        <img src="./image/ooppakorn/dht22-digital-temperature-humidity-sensor-module56055530906.webp">
+                        <p class="description">DHT22</p>
+                    </div>
+                    <div class="image-description">
+                        <img src="./image/ooppakorn/Dupont-Jumper-Wire-30cm-Male-to-Male.jpg">
+                        <p class="description">Jumper Wire</p>
+                    </div>
+                    <div class="image-description">
+                        <img src="./image/ooppakorn/b7c37d570bff93c80c554a950839f6d7.jpg">
+                        <p class="description">SC-33</p>
+                    </div>
 
-                        </div>
-                        <div class="column">
-                            <div class="image-description">
-                                <img src="./image/ooppakorn/Dupont-Jumper-Wire-30cm-Male-to-Male.jpg">
-                                <p class="description">Jumper Wire</p>
-                            </div>
-                            <div class="image-description">
-                                <img src="./image/ooppakorn/b7c37d570bff93c80c554a950839f6d7.jpg">
-                                <p class="description">SC-33</p>
-                            </div>
-
-                        </div>
-                        <div class="column">
-                            <div class="image-description">
-                                <img src="./image/ooppakorn/HTB1KVHVQXXXXXczXVXXq6xXFXXXv.jpg_720x720q50.png">
-                                <p class="description">Breadboard</p>
-                            </div>
-                            <div class="image-description">
-                                <img src="./image/ooppakorn/IMG20241029151035.jpg">
-                                <p class="description">Propeller</p>
-                            </div>
-
-                        </div>
-                        <div class="column">
-                            <div class="image-description">
-                                <img src="./image/ooppakorn/513XeStiRQL.jpg">
-                                <p class="description">330 Ohm Resistor</p>
-                            </div>
-                        </div>
-                      </div>
+                    <div class="image-description">
+                        <img src="./image/ooppakorn/HTB1KVHVQXXXXXczXVXXq6xXFXXXv.jpg_720x720q50.png">
+                        <p class="description">Breadboard</p>
+                    </div>
+                    <div class="image-description">
+                        <img src="./image/ooppakorn/IMG20241029151035.jpg">
+                        <p class="description">Propeller</p>
+                    </div>
+                    <div class="image-description">
+                        <img src="./image/ooppakorn/513XeStiRQL.jpg">
+                        <p class="description">330 Ohm Resistor</p>
+                    </div>
                 </div>
-                </center>
             </div>
             </p>
             <br><br><br>
         </div>
     </div>
-    <div class="message-section">
-        <div class="container">
-            <div class="log-container">
-                <textarea name="" id="txtarea" disabled> 
+    <br><br><br>
+    <div class="parallax"></div>
+    <br><br><br>
+    <div class="show-off-section">
+            <div class="container">
+                <h1>Test</h1><br>
+                <div class="log-container">
+                    <textarea name="" id="txtarea" disabled> 
      -------------- Welcome to log window --------------</textarea>
-                <div id="messages">This is the Suggestion</div>
+                    <div class="message-box">
+                        <div id="messages">This is the Suggestion</div>
+                    </div>
+                    
+                </div>
+
+        </div>
+        <br><br>
+        <script>
+            const eventSource = new EventSource('/events');
+            const txtareaGet = document.getElementById('txtarea');
+            // txtareaGet.value += "\n";
+            eventSource.onmessage = function(event) {
+                const messagesDiv = document.getElementById('messages');
+                const txtareaGet = document.getElementById('txtarea');
+                messagesDiv.textContent = event.data;
+                txtareaGet.value += "\n"+"     "+event.data;
+                txtareaGet.scrollTop = txtareaGet.scrollHeight
+                // newMessage.textContent = event.data;
+                messagesDiv.appendChild(newMessage);
+            };
+        </script>
+    </div>
+
+    <div class="source">
+        <div class="container">
+            <div class="source-container">
+                <a href="" class="ref-vid" target="_blank">
+                    <div class="src-vid">
+                        <img src="image/source-logo/youtube-6616310_1280.png" height="50vw">
+                        <h1>Video Presentation</h1>
+                    </div>
+                </a>
+                <a href="" class="ref-git" target="_blank">
+                    <div class="src-github">
+                        <img src="image/source-logo/25231.png" height="50vw">
+                        <h1 style="padding-left: 10px;">Source Code</h1>
+                    </div>
+                </a>
+                <a href="" class="ref-poster" target="_blank">
+                    <div class="src-poster">
+                        <img src="image/source-logo/Icon_pdf_file.svg.png" height="50vw">
+                        <h1 style="padding-left: 10px;">Project Poster</h1>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
-    <script>
-        const eventSource = new EventSource('/events');
-        const txtareaGet = document.getElementById('txtarea');
-        // txtareaGet.value += "\n";
-        eventSource.onmessage = function(event) {
-            const messagesDiv = document.getElementById('messages');
-            const txtareaGet = document.getElementById('txtarea');
-            messagesDiv.textContent = event.data;
-            txtareaGet.value += "\n"+"     "+event.data;
-            txtareaGet.scrollTop = txtareaGet.scrollHeight
-            // newMessage.textContent = event.data;
-            messagesDiv.appendChild(newMessage);
-        };
-    </script>
+    <br><br>
+    <hr style="width:50%;">
 
     <div class="credit">
-        <div class="container">
+        <h1>About Us</h1>
+        <br>
+        <div class="credit-container" style="display: flex;">
+            <div class="contee1">
+                <img src="image/dragonball/goku.png" alt="">
+                <div class="info">
+                    <div class="name">Kawin Isaramala</div>
+                    <div class="id">66070009</div>
+                </div>
+            </div>
+            <div class="contee2">
+                <img src="image/dragonball/vegeta.png" alt="">
+                <div class="info">
+                    <div class="name">Karn Suddee</div>
+                    <div class="id">66070014</div>
+                </div>
+            </div>
+            <div class="contee3">
+                <img src="image/dragonball/picolo.png" alt="">
+                <div class="info">
+                    <div class="name">Kittipit Pinthawornrak</div>
+                    <div class="id">66070017</div>
+                </div>
+            </div>
+            <div class="contee4">
+                <img src="image/dragonball/bu.png" alt="">
+                <div class="info">
+                    <div class="name">Teerapat Tuanpromrat</div>
+                    <div class="id">66070093</div>
+                </div>
+            </div>
             
         </div>
     </div>
+    <br><br><br><br>
+
+    <!-- <div class="our-team">
+        <div class="our-team-contianer" style="display: flex;">
+            <h1>Source Code</h1>
+            <div class="our-team-contianer" style="display: flex;">
+                <img src="image/our-team/IMG_7450.JPG"  alt="">
+                <img src="image/our-team/IMG_7439.JPG"  alt="">
+                <img src="image/our-team/IMG_7460 (1).JPG"  alt="">
+                <img src="image/our-team/IMG_7452.JPG"  alt="">
+            </div>
+        </div>
+    </div>
+     -->
     
-    <a href="https://github.com/TaeTanakrit0089">Tanakrit Tae Tae</a>
+     <div class="our-team">
+        <h1>Our Teams</h1>
+        <br>
+        <div class="our-team-container">
+            <div class="team-member">
+                <img src="image/our-team/IMG_7450.JPG" alt="Team member 1">
+                
+            </div>
+            <div class="team-member">
+                <img src="image/our-team/IMG_7439.JPG" alt="Team member 2">
+            </div>
+            <div class="team-member">
+                <img src="image/our-team/IMG_7460 (1).JPG" alt="Team member 3">
+            </div>
+            <div class="team-member">
+                <img src="image/our-team/IMG_7452.JPG" alt="Team member 4">
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
     <script src="app.js"></script>
 </body>
 </html>

@@ -9,8 +9,28 @@ body, html{
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-style: normal;
+    overflow-x: hidden; 
 
 }
+
+h1{
+    font-size: 4vh;
+
+}
+
+p{
+    font-size: 20px;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+  }
 
 .home {
     background: rgb(140, 150, 190);
@@ -55,6 +75,23 @@ body, html{
 
 }
 
+.cool-image{
+}
+
+.cool-image-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 40px;
+    justify-content: center;
+}
+
+.cool-image-container img{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
 .container {
     padding-left: 10%;
     padding-right: 10%;
@@ -80,12 +117,15 @@ body, html{
 }
 
 .oopakorn-img {
-    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
 }
 
 .row {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding: 0 4px;
     justify-content: space-around;
     
@@ -107,21 +147,25 @@ body, html{
   }
 
 .image-description {
-    text-align: center; /* Center the text and image */
+    text-align: center;
     margin-top: 10px;
 }
 
 .image-description img {
-    height: 10vw;
-    width: 10vw;
-    display: block; /* Ensure the image is treated as a block element */
-    margin: 0 auto; /* Center the image horizontally */
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: 0 auto; 
 }
 
 .description {
-    font-size: 1vw; /* Adjust this based on your preference */
-    color: #333; /* Adjust text color if needed */
-    margin-top: 5px; /* Add some spacing between the image and description */
+    font-size: 15px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.show-off-section {
+    bottom: 10px;
 }
 
 .log-container {
@@ -139,10 +183,218 @@ body, html{
     resize: none;
 }
 
+#messages {
+    
+}
+
 textarea::-webkit-scrollbar {
     /* width: 0em; */
     display: none;
 }
+
+.source {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.source .container {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+
+.source-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+/* .source-container h1 {
+    font-size:30px;
+} */
+
+.src-vid{
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    padding-top: 10px;
+}
+
+.ref-vid{
+    text-decoration: none;
+    color: rgba(230, 47, 47, 0.856);
+}
+
+.ref-vid :hover{
+    color: rgb(143, 45, 45);
+}
+
+.src-github{
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    padding-top: 10px;
+}
+
+.ref-git{
+    text-decoration: none;
+    color: black;
+}
+
+.ref-git :hover{
+    color: rgb(203, 203, 203);
+}
+
+.src-poster{
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    padding-top: 10px;
+    color: black;
+}
+
+.ref-poster{
+    text-decoration: none;
+}
+
+.ref-poster :hover{
+    color: rgb(203, 203, 203);
+}
+
+.credit {
+    justify-content: center; 
+    align-items: center;   
+    padding: 20px;
+    /* background-color: black; */
+}
+
+.credit h1{
+    justify-content: center; 
+    align-items: center;   
+    text-align: center;
+}
+
+
+.credit-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    width: calc(100% - 20px);
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+
+.contee1, .contee2, .contee3, .contee4 {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin: 5px;
+    background-color: white;
+    padding: 10px;
+    width: 600px;   
+    max-height: 500px;   
+    box-sizing: border-box; 
+}
+
+.info {
+    padding: 15px;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.id {
+    font-size: 20px;
+}
+
+
+.credit-container img {
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%; 
+    border-radius: 50%;
+    /* border-radius: 1000px; */
+    width: 110px;
+    height: 110px;
+ 
+}
+
+/* .our-team{
+    justify-content: center;
+    align-items: center;
+}
+
+.our-team-contianer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;               
+    max-width: 90vw;
+    flex-wrap: wrap;        
+}
+
+
+.our-team-contianer img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30vw;
+    height: 300vw;
+    object-fit: cover; 
+    overflow: hidden;
+    border-radius: 10px;
+} */
+
+
+.our-team {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.our-team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 100px;
+    justify-content: center;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.team-member {
+    width: 500px;  
+    height: 250px;      
+    border-radius: 10px; 
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;  
+}
+
+
+
+
+
 /*
 textarea::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
