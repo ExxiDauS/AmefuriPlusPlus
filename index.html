@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amefuri++ 雨降り</title>
-    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
     <!-- <link rel="stylesheet" href="AmefuriPlusPlus/media.css"> -->
     <link rel="icon" type="image/x-icon" href="image/strawberry.ico">
 </head>
@@ -147,7 +147,7 @@
                         <h1>Video Presentation</h1>
                     </div>
                 </a>
-                <a href="" class="ref-git" target="_blank">
+                <a href="https://github.com/ExxiDauS/AmefuriPlusPlus" class="ref-git" target="_blank">
                     <div class="src-github">
                         <img src="image/source-logo/25231.png" height="50vw">
                         <h1 style="padding-left: 10px;">Source Code</h1>
@@ -238,3 +238,414 @@
     <script src="app.js"></script>
 </body>
 </html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+}
+
+body, html{
+    height: 100%;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden; 
+
+}
+
+h1{
+    font-size: 4vh;
+
+}
+
+p{
+    font-size: 20px;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+  }
+
+.home {
+    background: rgb(140, 150, 190);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.japanese-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.kanji-hiragana {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.kanji {
+    font-size: 4vw;
+    margin-right: 10px;
+}
+
+.hiragana {
+    padding-top: 10%;
+    font-size: 2vw;
+
+}
+
+
+.center {
+    text-align: center;
+
+}
+
+.cool-image{
+}
+
+.cool-image-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 40px;
+    justify-content: center;
+}
+
+.cool-image-container img{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* background-color: aliceblue; */
+}
+
+.parallax {
+    background-image: url("./image/Arduino_Uno-R4.png");
+    height: 50%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.abstract {
+    /* background-color: green; */
+}
+
+.details {
+
+}
+
+.oopakorn-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: space-around;
+    
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    padding: 0 4px;
+    
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    height: 10vw;
+    width: 10vw;
+
+  }
+
+.image-description {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.image-description img {
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: 0 auto; 
+}
+
+.description {
+    font-size: 15px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.show-off-section {
+    bottom: 10px;
+}
+
+.log-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.log-container textarea{
+    overflow-y: scroll;
+    color: rgb(102, 255, 102);
+    width: 30vw;
+    height: 15vw;
+    background: black;
+    resize: none;
+}
+
+#messages {
+    
+}
+
+textarea::-webkit-scrollbar {
+    /* width: 0em; */
+    display: none;
+}
+
+.source {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.source .container {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+
+.source-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+/* .source-container h1 {
+    font-size:30px;
+} */
+
+.src-vid{
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    padding-top: 10px;
+}
+
+.ref-vid{
+    text-decoration: none;
+    color: rgba(230, 47, 47, 0.856);
+}
+
+.ref-vid :hover{
+    color: rgb(143, 45, 45);
+}
+
+.src-github{
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    padding-top: 10px;
+}
+
+.ref-git{
+    text-decoration: none;
+    color: black;
+}
+
+.ref-git :hover{
+    color: rgb(203, 203, 203);
+}
+
+.src-poster{
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    padding-top: 10px;
+    color: black;
+}
+
+.ref-poster{
+    text-decoration: none;
+}
+
+.ref-poster :hover{
+    color: rgb(203, 203, 203);
+}
+
+.credit {
+    justify-content: center; 
+    align-items: center;   
+    padding: 20px;
+    /* background-color: black; */
+}
+
+.credit h1{
+    justify-content: center; 
+    align-items: center;   
+    text-align: center;
+}
+
+
+.credit-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    width: calc(100% - 20px);
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+
+.contee1, .contee2, .contee3, .contee4 {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin: 5px;
+    background-color: white;
+    padding: 10px;
+    width: 600px;   
+    max-height: 500px;   
+    box-sizing: border-box; 
+}
+
+.info {
+    padding: 15px;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.id {
+    font-size: 20px;
+}
+
+
+.credit-container img {
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%; 
+    border-radius: 50%;
+    /* border-radius: 1000px; */
+    width: 110px;
+    height: 110px;
+ 
+}
+
+/* .our-team{
+    justify-content: center;
+    align-items: center;
+}
+
+.our-team-contianer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;               
+    max-width: 90vw;
+    flex-wrap: wrap;        
+}
+
+
+.our-team-contianer img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30vw;
+    height: 300vw;
+    object-fit: cover; 
+    overflow: hidden;
+    border-radius: 10px;
+} */
+
+
+.our-team {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.our-team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 100px;
+    justify-content: center;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.team-member {
+    width: 500px;  
+    height: 250px;      
+    border-radius: 10px; 
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;  
+}
+
+
+
+
+
+/*
+textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+    display: none;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+} */
+
+</style>
