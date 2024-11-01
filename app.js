@@ -38,7 +38,7 @@ mqttClient.on("message", (topic, message) => {
 });
 
 // Serve static files and HTML page
-app.use(express.static("public"));
+app.use(express.static(__dirname));
 
 app.get("/events", (req, res) => {
   // Set headers for SSE
@@ -66,7 +66,7 @@ app.get("/events", (req, res) => {
 
 // Basic route to serve the HTML page
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.sendFile(__dirname + "/index.html");
 });
 
 // Start the server
