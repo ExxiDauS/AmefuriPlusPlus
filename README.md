@@ -7,7 +7,7 @@
 https://exxidaus.github.io/AmefuriPlusPlus/
 ---
 ## PROJECT DEMO VIDEO
-https://www.youtube.com/watch?v=l3jygdEr8YQ&feature=youtu.be
+https://www.youtube.com/watch?v=xkHcDWXO2lE
 ---
 ## สมาชิกกลุ่ม
 | Collaborators 🥸 | Student Number 📈 |
